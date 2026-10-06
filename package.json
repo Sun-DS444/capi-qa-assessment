@@ -1,0 +1,18 @@
+{
+  "name": "capi-qa-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "QA take-home: offline sync API tests, dynamic skip-logic web tests, schema contract checks",
+  "scripts": {
+    "mock-server": "node mock-server/server.js",
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:web": "playwright test --project=web",
+    "test:schema": "playwright test --project=schema",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^20.0.0"
+  }
+}
